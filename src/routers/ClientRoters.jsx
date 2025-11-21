@@ -3,11 +3,15 @@ import React from 'react';
 import Search from '../pages/client/search/Search';
 import Main from '../pages/client/main/Main';
 import { Route, Router, Routes } from 'react-router-dom';
+import MovieDetail from '../pages/client/detail/Detail';
+import WatchMovie from '../pages/client/main/WatchMovie';
 
 function ClientRoters(props) {
     const routers = [
         { path: "/", components: <Main /> },
         { path: "/search", components: <Search /> },
+        {path :"/detail/:id", components: <MovieDetail />},
+        {path :"/watch/:id", components: <WatchMovie />},
     ];
     return (
         <div className=''>

@@ -65,7 +65,7 @@ export default function App() {
                     {/* Hình nền */}
                     <img
                         src={e.imgUrl} alt=""
-                        className="w-full h-auto"
+                        className="w-full h-full"
                     />
                 </SwiperSlide>
                 ))};

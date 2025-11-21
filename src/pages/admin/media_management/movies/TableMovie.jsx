@@ -54,7 +54,7 @@ export default function CustomizedTables({ handleEdit }) {
     const categories = useContext(CategoryContext);
     const actors = useContext(ActorContext);
     const characters = useContext(ChacracterContext);
-    const countris = useContext(CountryContext)
+    const countris = useContext(CountryContext);
 
     const [openDelete, setOpenDelete] = useState(false);
     const [MovieIdToDelete, setMovieIdToDelete] = useState(null);
