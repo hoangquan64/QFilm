@@ -1,0 +1,12 @@
+img {
+  width: 100%;
+}
+.mySwiper {
+   width: 40vw;
+   transform: translateY(-150%);
+   img {
+    height: 50px;
+    border-radius: 10px;
+   }
+}
+

@@ -1,13 +1,25 @@
-# React + Vite
+## cài dự án với vite
+npm create vite@latest
+## cài tailwincss 
+npm install tailwindcss @tailwindcss/vite
+- Sửa file vite.config.js như này ( code dán hết phần này thay vào )
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-Currently, two official plugins are available:
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(),tailwindcss()],
+})
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# QFilm
+- Coppy  @import "tailwindcss"; thay vào file index.css ( xoá tất cả phần cũ )
+- App.css xoá hết css cũ của họ
+## Cài Mui UI 
+- npm install @mui/material @emotion/react @emotion/styled
+## Cài React Icon 
+- npm install react-icons --save
+## Cài react router dom
+- npm i react-router-dom
+## Cài swiper
+- npm i swiper
